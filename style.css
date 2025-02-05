@@ -89,7 +89,7 @@ body{
     text-transform: capitalize;
     
 }
-.title-box{
+/* .title-box{
     background: #ffffff;
     margin: 0 auto 80px;
     height: 120px;
@@ -116,6 +116,57 @@ body{
     bottom: -10px;
     right: -10px;
     z-index: -1;
+} */
+
+.title-box{
+    background: #ffffff;
+    margin: 0 auto 80px;
+    height: 120px;
+    max-width: 700px;
+    position: relative;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 50, 0.5);
+    transition: 0.6s ease;
+   
+
+}
+.title-box:hover{
+    border-radius: 27px;
+}
+.title-box::after{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background: #f992a6;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: -1;
+    transition: 0.6s ease;
+}
+.title-box:hover::after {
+    background: #F992A6;
+    border-top-left-radius: 27px;
+    border-bottom-left-radius: 27px;
+    height: 140px;
+    width: 363px;
+}
+.title-box::before{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background: #f992a6;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    z-index: -1;
+    transition: .6s ease;
+}
+.title-box:hover:before{
+    background: #F992A6;
+    height: 140px;
+    width: 363px;
+    border-top-right-radius: 27px;
+    border-bottom-right-radius: 27px;
 }
 
 .trending-image{
